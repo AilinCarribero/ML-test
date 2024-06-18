@@ -1,0 +1,144 @@
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    padding: 0 16px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: inset 1px 1px 15px var(--color-gris-claro);
+    }
+
+    .card-img-content {
+        margin: 16px 16px 16px 0;
+        width: 180px;
+        height: 180px;
+        overflow: hidden;
+
+        .card-img-product {
+            border-radius: 4px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .card-text-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 32px;
+        width: calc(96% - 200px);
+        
+
+        .card-text {
+            font-size: 18px;
+            width: 80%;
+            
+            .card-text-precio {
+                padding-bottom: 32px;
+                
+                .text-precio-item {
+                    padding-top: 5px;
+                    display: inline;
+                    font-size: 24px;
+                }
+
+                .icon-envio-gratis {
+                    margin-left: 5px;
+                    width: 22px;
+                    height: 22px;
+                    display: inline-flex;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    background-color: var(--color-verde-chillon);
+                    border-radius: 50%;
+
+                    svg {
+                        height: 10px;
+                    }
+                }
+            }
+            
+        }
+
+        .card-text-provincia {
+            font-size: 12px;
+            padding-bottom: 16px;
+            margin-right: 0;
+            max-width: 120px;
+        }
+    }
+
+    .card-border {
+        background-color: var(--color-blanco);
+        height: 2px;
+        padding: auto;
+        margin: auto;
+        width: 97%;
+    }
+}
+
+.card-content-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid var(--color-blanco);
+
+    .card-img-content {
+        padding: 16px;
+        width: 80%;
+        height: 80%;
+
+        .card-img-product {
+            border-radius: 4px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .card-text-content {
+        padding: 0 16px;
+
+        .card-text {
+            font-size: 18px;
+            padding-bottom: 16px;
+            
+            .card-text-precio {
+                font-size: 24px;
+                padding-bottom: 16px;
+
+                .text-precio-item {
+                    display: inline;
+                    font-size: 24px;
+                }
+
+                .icon-envio-gratis {
+                    margin-left: 5px;
+                    width: 22px;
+                    height: 22px;
+                    display: inline-flex;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    background-color: var(--color-verde-chillon);
+                    border-radius: 50%;
+
+                    svg {
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        .card-text-provincia {
+            font-size: 12px;
+            margin-right: 0;
+            max-width: 120px;
+        }
+    }
+}

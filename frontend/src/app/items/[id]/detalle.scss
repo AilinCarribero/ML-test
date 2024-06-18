@@ -1,0 +1,79 @@
+.item-content {
+    margin: var(--margin-content);
+    
+    .item-detalle-content {
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .item-detalle-carousel-content {
+            max-width: min(90%, 680px);
+            //max-width: 680px;//min(calc(100% - 32px), 680px);
+            padding: 0 16px;
+            padding-top: 16px;
+        }
+
+        .item-detalle-compra-content {
+            width: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 16px 32px;
+
+            .item-detalle-compra-cant-venta {
+
+                p {
+                    font-size: 14px;
+                    margin-block-start: 16px;
+                    margin-block-end: 16px;
+                }
+            }
+
+            .item-detalle-compra-titulo {
+
+                p {
+                    font-size: 24px;
+                    margin-block-start: 0px;
+                    margin-block-end: 32px;
+                }
+            }
+
+            .item-detalle-compra-precio {
+                p {
+                    font-size: 46px;
+                    margin-block-start: 0px;
+                    margin-block-end: 32px;
+                }
+            }
+
+            .item-detalle-compra-compra {
+
+                .item-detalle-button-compra {
+                    width: 100%;
+                    align-items: center;
+                    background-color: var(--color-azul);
+                    border: 1px solid var(--color-azul);
+                    border-radius: var(--border-radius);
+                    font-size: 24px;
+                    color: #fff;
+                    padding: 15px;
+                }
+            }
+        }
+
+        .item-detalle-detalle-content {
+            width: fit-content;
+            padding: 0 32px 32px 32px;
+            max-width: min(100%, 680px);
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

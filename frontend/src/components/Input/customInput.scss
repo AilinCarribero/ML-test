@@ -1,0 +1,36 @@
+.content-input {
+    display: flex;
+        
+    input {
+        border-color: transparent;
+        font-size: 18px;
+        padding: 10px;
+
+        &:focus {
+            border: 2px solid var(--color-gris-claro);
+            outline: none; 
+        }
+
+        &::placeholder {
+            font-size: 18px;
+            color: var(--color-gris-claro);
+        }
+    }
+
+    .button-icon-search {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px none transparent;
+        cursor: pointer;
+
+        svg {
+            font-size: 100%;
+        }
+
+        &:hover {
+            box-shadow: inset 0px 0px 5px var(--color-gris-claro);
+        }
+    }
+}
